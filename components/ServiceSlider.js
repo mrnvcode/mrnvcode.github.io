@@ -1,5 +1,19 @@
+// icons
+import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket } from 'react-icons/rx'
+
+// import swiper react components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// import swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+
+// import required modules
+import { FreeMode, Pagination } from 'swiper';
+
 // data
-const serviceData = [
+export const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Branding',
