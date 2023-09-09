@@ -31,7 +31,7 @@ const Services = () => {
               exit="hidden"
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis nulla vel libero fringilla facilisis. Sed aliquam massa vel nulla iaculis.
+              From expert technical support and troubleshooting to empowering learners with computer literacy, I offer a versatile range of services. With a passion for technology and a knack for problem-solving, I'm dedicated to delivering excellence in IT support and web & software development.
             </motion.p>
           </div>
           {/* slider */}

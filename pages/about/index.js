@@ -2,8 +2,10 @@
 /* eslint-disable react/jsx-key */
 // Imports
 import React, { useState } from 'react';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from 'react-icons/fa';
-import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from 'react-icons/si';
+
+import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma, FaJava, FaPython, FaDatabase, FaAngular, FaVuejs, FaSwift, FaNodeJs, FaBootstrap, FaPhp, FaDesktop, FaLaptop, FaServer, FaNetworkWired, FaCloud, } from 'react-icons/fa';
+
+import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop, SiDotnet, SiRuby, SiKotlin, SiCplusplus, SiRust, SiGit, SiGo, SiLinux, SiMongodb, SiPostgresql, SiWindows, SiApple, SiCisco, SiVmware } from 'react-icons/si';
 
 //  data
 export const aboutData = [
@@ -20,24 +22,47 @@ export const aboutData = [
           <SiNextdotjs />,
           <SiFramer />,
           <FaWordpress />,
+          <FaAngular />,
+          <FaNodeJs />,
+          <FaBootstrap />,
+          <FaVuejs />
         ],
       },
       {
         title: 'UI/UX Design',
         icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       },
-    ],
-  },
-  {
-    title: 'awards',
-    info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'Software Development',
+        icons: [
+          <FaJava />,
+          <FaPython />,
+          <FaDatabase />,
+          <FaSwift />,
+          <SiDotnet />,
+          <SiRuby />,
+          <SiKotlin />,
+          <SiCplusplus />,
+          <FaPhp />,
+          <SiLinux />,
+          <SiKotlin />
+        ],
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'IT Support',
+        icons: [
+          <FaDesktop />,
+          <FaLaptop />,
+          <FaServer />,
+          <FaNetworkWired />,
+          <SiWindows />,
+          <SiLinux />,
+          <SiApple />,
+          <SiCisco />,
+          <SiVmware />,
+          <FaDatabase />,
+          <FaCloud />
+        ],
       },
     ],
   },
@@ -45,16 +70,16 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Cable Tech Support - Foundever Inc.',
+        stage: 'December 2022 - Currently Working',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Computer Instructor - CASE Community Services',
+        stage: 'February 2023 - May 2023',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'IT Support Specialist - iEnergizer Pvt. Ltd.',
+        stage: 'October 2021 - June 2022',
       },
     ],
   },
@@ -62,16 +87,8 @@ export const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Diploma in Computer Programming - Georgian College, Toronto, CA',
+        stage: '2024',
       },
     ],
   },
@@ -114,7 +131,7 @@ const About = () => {
             exit="hidden"
             className='h2'
           >
-            Captivating <span className='text-accent'>stories</span> birth magnificent designs.
+            Captivating stories <span className='text-accent'>fuel</span> visionary designs.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -123,7 +140,7 @@ const About = () => {
             exit="hidden"
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            10 years ago, I began freelancing as a developer. Since then, I've done remote work for agencies, consulted for startups, and collaborated on digital porducts for business and consumer use.
+            I'm Naman, a passionate IT enthusiast, aspiring developer, and tech educator. My exhilarating journey through technology, from tinkering with computers to excelling in IT support and software development, fuels my drive to create magnificent designs. Join me on this inspiring tech adventure!
           </motion.p>
           {/* counters */}
           <motion.div
@@ -137,31 +154,32 @@ const About = () => {
               {/* experience */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={2} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of Experience</div>
               </div>
               {/* clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={50} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Satisfied Clients</div>
               </div>
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={30} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished Projects</div>
               </div>
-              {/* awards */}
+              {/* students 
               <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5} /> +
+                  <CountUp start={0} end={70} duration={5} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Winning Awards</div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Students</div>
               </div>
+              */}
             </div>
           </motion.div>
         </div>

@@ -8,7 +8,11 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 // icons
-import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket, RxArrowTopRight } from 'react-icons/rx'
+import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket, RxArrowTopRight } from 'react-icons/rx';
+
+import { FaCodeBranch, FaDesktop, FaCode, FaFileAlt, FaChalkboard, FaChalkboardTeacher, FaTools } from 'react-icons/fa';
+
+import { } from 'react-icons/si';
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper';
@@ -16,29 +20,34 @@ import { FreeMode, Pagination } from 'swiper';
 // data
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaDesktop />,
+    title: 'Technical Support',
+    description: 'Experience in providing top-notch technical support, including resolving hardware and software challenges and ensuring continuity.',
   },
   {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaCodeBranch />,
+    title: 'Software Development',
+    description: 'Expert in developing robust and innovative software solutions, leveraging a diverse skill set of multiple languages.',
   },
   {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaCode />,
+    title: 'Web Development',
+    description: 'Strong skill set in web development. Well-versed in data structures, algorithms, software engineering, and database management.',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaFileAlt />,
+    title: 'Support Documentation',
+    description: 'Ability to create detailed support documentation to assist users in troubleshooting and resolve technical issues.',
   },
   {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaChalkboardTeacher />,
+    title: 'Computer Instruction',
+    description: 'Design and deliver comprehensive computer literacy courses, empowering learners of all ages, with essential computer skills.',
+  },
+  {
+    icon: <FaTools />,
+    title: 'Troubleshooting',
+    description: 'Problem-solving skills extend to troubleshooting a wide range of technical issues, ensuring smooth operations delivering quality output.',
   },
 ];
 
