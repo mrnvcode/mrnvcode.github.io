@@ -70,15 +70,15 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'Cable Tech Support - Foundever Inc.',
+        title: 'Technical Support - Foundever Inc.',
         stage: 'December 2022 - Currently Working',
       },
       {
-        title: 'Computer Instructor - CASE Community Services',
+        title: 'Frontend Developer - CASE Community Services',
         stage: 'February 2023 - May 2023',
       },
       {
-        title: 'IT Support Specialist - iEnergizer Pvt. Ltd.',
+        title: 'Frontend Developer - iEnergizer Pvt. Ltd.',
         stage: 'October 2021 - June 2022',
       },
     ],
